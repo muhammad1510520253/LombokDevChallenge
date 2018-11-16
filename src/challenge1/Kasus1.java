@@ -16,11 +16,11 @@ public class Kasus1 {
             int count = 0;
             Scanner input = new Scanner(System.in);
             System.out.print("Nilai awal: ");
-            min = input.nextInt();
+            min = input.nextInt(); 
             System.out.print("Nilai akhir: ");
             max = input.nextInt();
             for (int i = min; i <= max; i++) {
-                if (i % 3 == 0 && i % 7 == 0) {
+                if (i % 3 == 0 || i % 7 == 0) {
                     System.out.println(" " + i);
                     count += i;
                 }
